@@ -1,0 +1,77 @@
+@import "./_colors";
+@import "./bodyStyle";
+@import "./mixin";
+
+
+
+main {
+    flex: 1 0 auto;
+    @include border(2px, red);
+
+    section {
+        div {
+            padding: $mainHeadings;
+
+            h1 {
+                text-align: $align;
+                @include text();
+
+
+                // h2 {
+                //     color: red;
+
+                //     h3 {
+
+                //         p {
+                //             color: red;
+
+                //             h4 {
+                //                 color: blue;
+                //             }
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+header {
+    nav {
+        background-color: $darkColor;
+        padding: $headerFooterPaddings;
+
+        ul {
+            list-style-type: none;
+            text-align: $align;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $textColor;
+                    padding: $headerFooterPaddings;
+
+                    &:hover {
+                        background-color: $blueColor;
+                    }
+
+                    // &::selection {
+                    //     background-color: red;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $darkColor;
+    padding: $headerFooterPaddings;
+
+    p {
+        color: $textColor;
+        text-align: $align;
+    }
+}

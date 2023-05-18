@@ -1,0 +1,15 @@
+$headerFooterPaddings: 12px;
+$mainHeadings: 8px 0px;
+$align: center;
+
+@mixin text {
+    background-color: $blueColor;
+    color: $lightColor;
+    padding: 15px;
+    font-weight: bold;
+}
+
+@mixin border($width, $color) {
+    border: $width solid $color;
+
+}
